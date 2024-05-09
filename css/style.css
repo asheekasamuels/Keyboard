@@ -6,65 +6,34 @@
     box-sizing: border-box;
 }
 
+
 body {
-    background-color: lightblue;
+    font-family: Arial, sans-serif;
+}
+
+.keyboard {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr); /* 10 columns */
+    gap: 5px; /* Gap between keys */
+    padding: 10px;
+    background-color: #f1f1f1;
     text-align: center;
 }
-.container{
-    margin: center 10px;
+
+.key {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    cursor: pointer;
 }
-.row{
-    width: 100%;
-    height:60px;
+
+.key:hover {
+    background-color: #e0e0e0;
 }
-.zero,.one, .two, .three, .four, .five {
-    margin: 10px 0 0 0;
-}
-button {
-    color: black;
-    width: 53px;
-    height: 53px;
-    border:none;
-    background: pink;
-    box-shadow: 5px 5px 10px pink, -5px -5px 10px pink;
-    font-size: 15px;
-    margin-left: 20px;
-    outline: black;
-    font-family: comic sans, fantasque sans, optima;
-    border-radius: 20%;
-}
-button:active{
-    box-shadow: 1px 1px 2px pink, -1px -1px 2px purple;
-}
-.back{
-    width: 115px;
-    border-radius: 10px;
-}
-.tab{
-    width: 85px;
-    border-radius: 10px;
-}
-.slace{
-     width:85px;
-     border-radius: 10px;
-}
-.cap{
-    width:100px;
-    border-radius: 10px;
-}
-.enter{
-    width:110px;
-    border-radius: 10px;
-}
-.shift{
-    width:120px;
-    border-radius: 10px;
-}
-.other{
-    width:78px;
-    border-radius: 10px;
-}
-.space{
-    width:300px;
-    border-radius: 10px;
+
+.wide {
+    grid-column: span 2; /* Span two columns */
 }
